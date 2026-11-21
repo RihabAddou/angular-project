@@ -1,0 +1,18 @@
+<section class="panier">
+  <h2>Panier ({{ panier.count() }})</h2>
+
+  @if (panier.count() === 0) {
+    <p class="vide">Panier vide</p>
+  }
+
+  <ul>
+    @for (p of panier.items(); track p.id) {
+      <li>
+        <span>{{ p.nom }} - {{ p.prix }} Dh</span>
+        <button class="danger" (click)="panier.supprimer(p.id)">Supprimer</button>
+      </li>
+    }
+  </ul>
+
+  <p class="total">Total : {{ panier.total() }} Dh</p>
+</section>

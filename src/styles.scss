@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding: 24px;
+  font-family: system-ui, sans-serif;
+  background: #f4f1fb;
+  color: #1f1f2e;
+}
+
+h2 {
+  color: #6a1fd0;
+  margin: 0 0 12px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  background: #7b1fe0;
+  color: white;
+  font-weight: 600;
+
+  &:hover {
+    background: #5f14b5;
+  }
+}

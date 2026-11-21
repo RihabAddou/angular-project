@@ -1,0 +1,22 @@
+.carte {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.15s;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+  h3 {
+    margin: 0 0 8px;
+  }
+
+  .prix {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #e0239a;
+    margin: 0 0 12px;
+  }
+}

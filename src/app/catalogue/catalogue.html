@@ -1,0 +1,11 @@
+<header class="resume">
+  <h2>Catalogue</h2>
+</header>
+
+<section class="grille">
+  @for (p of produits(); track p.id) {
+    <app-produit-card
+      [produit]="p"
+      (ajoute)="ajouter($event)" />
+  }
+</section>
